@@ -147,8 +147,7 @@ Based on the analysis:
 telco-customer-churn-analysis/
 │
 ├── data/
-│   ├── raw/
-│   └── processed/
+│   └── raw/
 │
 ├── sql/
 ├── notebooks/
