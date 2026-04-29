@@ -4,13 +4,13 @@ Customer churn analysis using SQL, Python, and Power BI to identify key drivers 
 
 ## Dashboard Preview
 ### Executive Overview
-![Overview](reports/figures/1. Executive Overview.png)
+![Overview](reports/figures/1. Executive Overview.jpeg)
 
 ### Churn Drivers
-![Drivers](reports/figures/2. Churn Drivers.png)
+![Drivers](reports/figures/2. Churn Drivers.jpeg)
 
 ### Customer Risk & Retention
-![Risk](reports/figures/3. Customer Risk & Retention.png)
+![Risk](reports/figures/3. Customer Risk & Retention.jpeg)
 
 ---
 
