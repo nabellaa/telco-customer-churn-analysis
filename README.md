@@ -1,5 +1,19 @@
 # Telco Customer Churn Analysis
 
+Customer churn analysis using SQL, Python, and Power BI to identify key drivers of churn and recommend retention strategies.
+
+## Dashboard Preview
+### Executive Overview
+![Overview](reports/figures/1. Executive Overview.png)
+
+### Churn Drivers
+![Drivers](reports/figures/2. Churn Drivers.png)
+
+### Customer Risk & Retention
+![Risk](reports/figures/3. Customer Risk & Retention.png)
+
+---
+
 ## Problem Statement
 
 Customer churn poses a significant challenge for subscription-based businesses. High churn rates reduce revenue stability and increase customer acquisition costs.
