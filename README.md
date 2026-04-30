@@ -1,6 +1,16 @@
-# Telco Customer Churn Analysis
+# Telco Customer Churn Analysis (SQL + Python + Power BI)
 
-Customer churn analysis using SQL, Python, and Power BI to identify key drivers of churn and recommend retention strategies.
+## Project Overview
+
+This project analyzes customer churn behavior for a telecommunications company using an end-to-end data analytics workflow.
+
+The goal is to identify key drivers of churn, segment high-risk customers, and provide actionable insights to improve customer retention and reduce revenue loss.
+
+The project follows a full analytics pipeline:
+
+**SQL → Python → Power BI**
+
+---
 
 ## Dashboard Preview
 ### Executive Overview
@@ -14,170 +24,85 @@ Customer churn analysis using SQL, Python, and Power BI to identify key drivers 
 
 ---
 
-## Problem Statement
+## Business Objective
 
-Customer churn poses a significant challenge for subscription-based businesses. High churn rates reduce revenue stability and increase customer acquisition costs.
-
-This project investigates **why customers are leaving**, identifies **high-risk segments**, and provides **data-driven recommendations** to improve customer retention.
-
----
-
-## Dataset
-
-* Source: IBM Telco Customer Churn Dataset (Kaggle)
-* Total records: 7,043 customers
-* Features include:
-
-  * Customer demographics
-  * Contract type
-  * Billing information
-  * Service usage
-  * Churn status (Yes/No)
+- Understand why customers are leaving
+- Identify high-risk customer segments
+- Measure financial impact of churn
+- Support data-driven retention strategies
 
 ---
 
 ## Tools & Technologies
 
-* **SQL** – Data exploration and segmentation
-* **Python (Pandas, Matplotlib)** – Data cleaning and analysis
-* **Power BI** – Dashboard visualization and storytelling
-
----
-
-## Key Insights
-
-### 1. High Overall Churn Rate
-
-* **26.5% of customers have churned**
-* Indicates a significant retention issue affecting more than 1 in 4 customers
-
----
-
-### 2. Revenue Impact
-
-* **Estimated monthly revenue loss: RM139K**
-* Demonstrates strong financial impact of customer attrition
-
----
-
-### 3. Contract Type is the Strongest Driver
-
-* Month-to-month churn rate: ~43%
-* One-year: ~11%
-* Two-year: ~3%
-
-Customers without long-term commitment are significantly more likely to churn
-
----
-
-### 4. Pricing Influences Churn
-
-* Churned customers pay **higher monthly charges (~RM74 vs RM61)**
-* Suggests perceived lack of value in higher-priced plans
-
----
-
-### 5. Early Customer Lifecycle Risk
-
-* First-year churn rate: ~47%
-* Long-term customers (2+ years): ~14%
-
-The first 12 months are the most critical period for retention
-
----
-
-### 6. High-Risk Customer Profile
-
-Customers most likely to churn:
-
-* Month-to-month contract
-* High monthly charges
-* Tenure less than 1 year
-
----
-
-## Dashboard Overview
-
-The Power BI dashboard is structured into three sections:
-
-### 1. Executive Overview
-
-* KPI summary (customers, churn rate, revenue loss)
-* High-level churn distribution
-
-### 2. Churn Drivers
-
-* Contract type vs churn
-* Monthly charges vs churn
-* Payment method analysis
-
-### 3. Customer Risk & Retention
-
-* Tenure-based churn analysis
-* High-risk customer segments
-* Business recommendations
-
----
-
-## Business Recommendations
-
-Based on the analysis:
-
-### 1. Improve Early Customer Experience
-
-* Focus on onboarding within first 3–6 months
-* Provide proactive support and engagement
-
----
-
-### 2. Encourage Long-Term Contracts
-
-* Offer discounts for 1–2 year commitments
-* Bundle services to increase perceived value
-
----
-
-### 3. Optimize Pricing Strategy
-
-* Review high-cost plans
-* Align pricing with customer value perception
-
----
-
-### 4. Target High-Risk Customers
-
-* Identify customers with:
-
-  * Short tenure
-  * Month-to-month contracts
-  * High monthly charges
-* Offer retention incentives before churn occurs
+- SQL (Data extraction & exploration)
+- Python (Pandas, Matplotlib, Seaborn)
+- Power BI (Dashboard & visualization)
+- Jupyter Notebook
 
 ---
 
 ## Project Structure
 
-```
-telco-customer-churn-analysis/
-│
-├── data/
-│   └── raw/
-│
-├── sql/
-├── notebooks/
-├── dashboards/
-├── reports/
-│   └── figures/
-│
-└── README.md
-```
+- `sql/` → Data exploration, churn analysis, feature engineering queries  
+- `notebooks/` → Python analysis & feature engineering  
+- `powerbi/` → Interactive dashboard  
+- `data/` → Raw dataset (if included)
 
 ---
 
-## Conclusion
+## Key Analysis Performed
 
-This project demonstrates how data analysis can uncover key drivers of customer churn and translate insights into actionable business strategies.
+### Churn Overview
+- Churn rate calculation
+- Churn distribution
 
-By focusing on **early retention, pricing optimization, and contract strategy**, companies can significantly reduce churn and protect revenue.
+### Churn Drivers
+- Contract type impact on churn
+- Monthly charges vs churn
+- Payment method analysis
+
+### Customer Segmentation
+- Tenure-based segmentation
+- High-risk customer identification
+
+### Business Impact
+- Customer Lifetime Value (CLV)
+- Estimated revenue loss due to churn
 
 ---
+
+## Key Insights
+
+- Month-to-month customers show the highest churn rate
+- Higher monthly charges are associated with increased churn risk
+- New customers (0–1 year tenure) are most likely to churn
+- A high-risk segment was identified based on tenure, contract type, and pricing
+- Churn leads to significant recurring revenue loss
+
+---
+
+## Dashboard (Power BI)
+
+The Power BI dashboard includes:
+
+- KPI Overview (Churn Rate, Revenue Loss, Customer Count)
+- Churn drivers analysis (Contract, Charges, Payment Method)
+- Customer segmentation (Tenure, High-risk groups)
+
+---
+
+## Business Recommendations
+
+- Encourage long-term contracts through incentives
+- Improve onboarding experience for new customers
+- Review pricing strategy for high-charge plans
+- Target high-risk customers with retention campaigns
+
+---
+
+## Key Takeaway
+
+This project demonstrates an end-to-end analytics workflow combining SQL, Python, and Power BI to generate actionable business insights for customer retention strategy.
+
+
