@@ -4,27 +4,11 @@
 
 This project analyzes customer churn behavior for a telecommunications company using an end-to-end data analytics workflow.
 
-The goal is to identify key drivers of churn, segment high-risk customers, and provide actionable insights to improve customer retention and reduce revenue loss.
-
-The project follows a full analytics pipeline:
-
-**SQL → Python → Power BI**
+The objective is to identify key drivers of churn, segment high-risk customers, and provide insights to support customer retention strategies and reduce revenue loss.
 
 ---
 
-## Dashboard Preview
-### Executive Overview
-![Overview](reports/figures/executive-overview.png)
-
-### Churn Drivers
-![Drivers](reports/figures/churn-drivers.png)
-
-### Customer Risk & Retention
-![Risk](reports/figures/customer-risk.png)
-
----
-
-## Business Objective
+## Business Objectives
 
 - Understand why customers are leaving
 - Identify high-risk customer segments
@@ -35,32 +19,47 @@ The project follows a full analytics pipeline:
 
 ## Tools & Technologies
 
-- SQL (Data extraction & exploration)
-- Python (Pandas, Matplotlib, Seaborn)
-- Power BI (Dashboard & visualization)
-- Jupyter Notebook
+- SQL → Data extraction, exploration, and feature engineering
+- Python → Data cleaning, analysis, and feature engineering
+- Power BI → Interactive dashboard and reporting
+- Jupyter Notebook → Exploratory data analysis and insights
+
+---
+
+## Dashboard Preview
+
+### Executive Overview
+![Overview](reports/figures/executive-overview.png)
+
+### Churn Drivers Analysis
+![Drivers](reports/figures/churn-drivers.png)
+
+### Customer Risk Segmentation
+![Risk](reports/figures/customer-risk.png)
 
 ---
 
 ## Project Structure
 
-- `sql/` → Data exploration, churn analysis, feature engineering queries  
-- `notebooks/` → Python analysis & feature engineering  
-- `powerbi/` → Interactive dashboard  
-- `data/` → Raw dataset (if included)
+- `sql/` → SQL scripts for data exploration, churn analysis, and feature engineering
+- `notebooks/` → Exploratory data analysis and insight development
+- `pipeline.py` → Automated pipeline for data cleaning, feature engineering, and KPI generation
+- `powerbi/` → Power BI dashboard files
+- `data/raw/` → Original dataset
+- `data/processed/` → Cleaned and feature-engineered datasets
 
 ---
 
-## Key Analysis Performed
+## Key Analysis
 
 ### Churn Overview
-- Churn rate calculation
+- Overall churn rate
 - Churn distribution
 
 ### Churn Drivers
-- Contract type impact on churn
-- Monthly charges vs churn
-- Payment method analysis
+- Contract type vs churn
+- Monthly charges impact
+- Payment method behavior
 
 ### Customer Segmentation
 - Tenure-based segmentation
@@ -68,41 +67,58 @@ The project follows a full analytics pipeline:
 
 ### Business Impact
 - Customer Lifetime Value (CLV)
-- Estimated revenue loss due to churn
+- Revenue loss estimation
 
 ---
 
 ## Key Insights
 
 - Month-to-month customers show the highest churn rate
-- Higher monthly charges are associated with increased churn risk
+- Higher monthly charges are associated with higher churn risk
 - New customers (0–1 year tenure) are most likely to churn
-- A high-risk segment was identified based on tenure, contract type, and pricing
-- Churn leads to significant recurring revenue loss
-
----
-
-## Dashboard (Power BI)
-
-The Power BI dashboard includes:
-
-- KPI Overview (Churn Rate, Revenue Loss, Customer Count)
-- Churn drivers analysis (Contract, Charges, Payment Method)
-- Customer segmentation (Tenure, High-risk groups)
+- A high-risk customer segment was identified based on tenure, contract type, and pricing
+- Churn results in significant recurring revenue loss
 
 ---
 
 ## Business Recommendations
 
-- Encourage long-term contracts through incentives
+- Encourage long-term contracts to improve retention
 - Improve onboarding experience for new customers
-- Review pricing strategy for high-charge plans
+- Review pricing strategy for high-charge customers
 - Target high-risk customers with retention campaigns
 
 ---
 
-## Key Takeaway
+## Data Pipeline Architecture
 
-This project demonstrates an end-to-end analytics workflow combining SQL, Python, and Power BI to generate actionable business insights for customer retention strategy.
+This project follows a simplified real-world analytics pipeline.
 
+### Data Flow
 
+Raw Data → SQL Processing → Python Pipeline → Processed Dataset → Power BI Dashboard
+
+---
+
+### How the System Works
+
+- When raw data is updated, the Python pipeline is re-run to regenerate cleaned and feature-engineered datasets
+- Power BI dashboard reflects updated results after refreshing the data source
+- Jupyter Notebook is used for analysis and must be re-run for new insights
+
+---
+
+### System Components
+
+- **Pipeline (SQL + Python)** → Data preparation and automation  
+- **Power BI Dashboard** → Visualization and reporting  
+- **Notebook** → Exploration and insight generation  
+
+---
+
+### Real-World Context
+
+This structure reflects a simplified version of a real analytics environment where:
+- Data pipelines automate preparation
+- BI tools support decision-making
+- Analysts focus on exploration and insights
